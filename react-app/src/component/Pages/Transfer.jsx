@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import axios from 'axios'w
+import axios from 'axios'
 import Swal from 'sweetalert2'
 
 
@@ -9,8 +9,7 @@ import { Thecontext } from '../../App'
 const Deposit = () => {
 
 
-    const {currentBalance, setCurrentBalance,
-        accountNumber, setAccountNumber,} = useContext(Thecontext)
+    const {setCurrentBalance} = useContext(Thecontext)
 
 
     const [inputValue, setInputValue] = useState({
