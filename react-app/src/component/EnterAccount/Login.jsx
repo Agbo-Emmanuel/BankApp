@@ -1,15 +1,15 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import "./enteraccountStyle.css"
 import { Link } from 'react-router-dom'
 import loginimg from "../Img/loginimg.png"
 import axios from 'axios'
 import Swal from 'sweetalert2'
-import { Thecontext } from '../../App'
+// import { Thecontext } from '../../App'
 
 
 const Login = () => {
 
-    const {currentBalance, setCurrentBalance, accountNumber, setAccountNumber,} = useContext(Thecontext)
+    // const {currentBalance, setCurrentBalance, accountNumber, setAccountNumber,} = useContext(Thecontext)
 
     const [userData, setUserData] = useState({
         email: "",

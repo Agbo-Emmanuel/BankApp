@@ -9,8 +9,7 @@ import { Thecontext } from '../../App'
 const Deposit = () => {
 
 
-    const {currentBalance, setCurrentBalance,
-        accountNumber, setAccountNumber,} = useContext(Thecontext)
+    const {setCurrentBalance} = useContext(Thecontext)
 
 
     const [inputValue, setInputValue] = useState({

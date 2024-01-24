@@ -11,13 +11,13 @@ import historyimg from "../Img/historylogo.png"
 import notificationimg from "../Img/notificationlogo.png"
 import logoutimg from "../Img/logoutlogo.png"
 import { Link, NavLink } from 'react-router-dom'
-import axios from 'axios'
+// import axios from 'axios'
 
 
 const Menu = () => {
 
 
-  const logOutUrl = "https://flipcash-banking.onrender.com/api/v1/user/sign-out"
+  // const logOutUrl = "https://flipcash-banking.onrender.com/api/v1/user/sign-out"
 
   const handleLogout = ()=>{
 

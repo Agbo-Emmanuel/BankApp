@@ -4,7 +4,7 @@ import './Betting.css'
 const Betting = () => {
 
 
-  const bettingUrl = "https://flipcash-banking.onrender.com/api/v1/all-bets"
+  // const bettingUrl = "https://flipcash-banking.onrender.com/api/v1/all-bets"
 
   const handleBettingtype = ()=>{
     
