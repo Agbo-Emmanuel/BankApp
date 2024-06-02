@@ -75,53 +75,50 @@
     width: 15%;
     height: 60%;
     background-color: #006D77;
-    text-decoration: none;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.link{
-    text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: whitesmoke;
     font-weight: 500;
 }
+
 .dashboardBtn:hover{
     background-color: #04545B;
 }
 
 .transactionHistory{
     width: 100%;
-    height: 47.9%;
+    height: 55%;
     /* background-color: yellow; */
-    margin-top: 30px;
+    /* margin-top: 10px; */
 }
 .transactionHistory > h5{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: #414141;
-    margin-left: 70px;
+    margin-left: 10px;
 }
 
 .transactionHistoryDivider{
     width: 100%;
     height: 1px;
     background-color: #D3D3D3;
-    margin-top: -20px;
+    margin-top: 10px;
 }
 
 .taransactionHistoryArea{
     width: 100%;
     height: 85%;
-    /* background-color: yellow; */
+    /* background-color: red; */
     display: flex;
     justify-content: space-around;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .statusArea{
-    width: 15%;
+    width: 22%;
     height: auto;
     /* background-color: blue; */
     margin-top: 10px;
@@ -130,25 +127,25 @@
     gap: 10px;
 }
 .nameArea{
-    width: 15%;
+    width: 22%;
     height: auto;
     /* background-color: blue; */
     margin-top: 10px;
 }
 .amountArea{
-    width: 15%;
+    width: 22%;
     height: auto;
     /* background-color: blue; */
     margin-top: 10px;
 }
 .dateArea{
-    width: 15%;
+    width: 22%;
     height: auto;
     /* background-color: blue; */
     margin-top: 10px;
 }
 .transactOptions{
-    font-size: 25px;
+    font-size: 20px;
     color: #808080;
 }
 .theTransactionsStatus{

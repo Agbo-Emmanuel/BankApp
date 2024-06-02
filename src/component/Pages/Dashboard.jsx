@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./dashboardStyle.css"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 // import { Thecontext } from '../../App'
 import axios from 'axios'
 
@@ -9,7 +9,7 @@ const Dashboard = () => {
   // const {currentBalance, setCurrentBalance,
   //       accountNumber, setAccountNumber,} = useContext(Thecontext)
 
-
+  const nav = useNavigate()
 
   const getAllHistory = "https://flipcash-banking.onrender.com/api/v1/user/getallmyhistory"
 
@@ -68,9 +68,9 @@ const Dashboard = () => {
         </div>
 
         <div className='dashboardPayment'>
-            <div className='dashboardBtn'><Link  className="link" to= "/withdraw" >Withdraw</Link></div>
-            <div className='dashboardBtn'><Link  className="link" to= "/transfer" >Transfer</Link></div>
-            <div className='dashboardBtn'><Link  className="link" to= "/deposit" >Deposit</Link></div>
+            <div className='dashboardBtn' onClick={()=>nav("/withdraw")}>Withdraw</div>
+            <div className='dashboardBtn' onClick={()=>nav("/transfer")}>Transfer</div>
+            <div className='dashboardBtn' onClick={()=>nav("/deposit")}>Deposit</div>
         </div>
 
         <div className='transactionHistory'>

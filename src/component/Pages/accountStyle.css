@@ -5,13 +5,14 @@
     flex-direction: column;
     align-items: flex-start;
     background-color: #EDF6F9;
-    gap: 50px;
+    gap: 20px;
+    overflow: auto;
 }
 
 .profilePhoto{
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
+    width: 90px;
+    height: 90px;
+    /* background-color: aqua; */
     border-radius: 100%;
     margin-top: 30px;
     margin-left: 70px;
@@ -22,7 +23,7 @@
     height: 100%;
     border-radius: 100%;
     object-fit: contain;
-}w
+}
 
 .profileDetails{
     width: 100%;
@@ -32,18 +33,18 @@
 
 .name{
     width: 80%;
-    height: 70px;
+    height: 60px;
     /* background-color: red; */
     display: flex;
     align-items: center;
     margin-left: 70px;
-    gap: 50px;
+    gap: 20px;
 }
 .name > h4{
-    font-size: 30px;
+    font-size: 20px;
     color: grey;
 }
 .name > p{
-    font-size: 30px;
+    font-size: 20px;
     color: black;
 }

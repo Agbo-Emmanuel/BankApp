@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./enteraccountStyle.css"
 import { Link } from 'react-router-dom'
-import signupimg from "../Img/signupimg.png"
 import theprofileImage from "../Img/profileImage.jpg"
 import axios from "axios"
 import Swal from 'sweetalert2'
@@ -121,16 +120,14 @@ const Signup = () => {
     <>
     
         <div className='signup'>
-            <div className='signupimg'>
-              <img src={signupimg} alt=''/>
-            </div>
+            <div className='signupimg'></div>
             <div className='theSignup'>
                 <h1>Sign up</h1>
                 <div className='signupline'></div>
 
-                <div className='profilePic'>
+                {/* <div className='profilePic'>
                   <img src={profileImage} alt=''/>
-                </div>
+                </div> */}
 
                 <div className='signupInputs'>
                   <div className='theSignupInputs'>
@@ -225,9 +222,10 @@ const Signup = () => {
                 </div>
                 
 
-                <button className='signupBtn' onClick={handleSignup}>Sign Up</button>
-
-                <p>Already have an Account? <Link className='pLink' to="/">Login</Link></p>
+                <div className='signup_btn_part'>
+                  <button className='signupBtn' onClick={handleSignup}>Sign Up</button>
+                  <p>Already have an Account? <Link className='pLink' to="/">Login</Link></p>
+                </div>
             </div>
         </div>
     

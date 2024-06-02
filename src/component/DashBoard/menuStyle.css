@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: #006D77;
+    overflow: auto;
 }
 
 .bankLogo{
@@ -27,12 +28,13 @@
 
 .theMenus{
     width: 100%;
-    height: 60%;
+    height: auto;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+    padding: 20px 0px 20px 0px;
 }
 .active{
     width: 95%;
@@ -42,13 +44,18 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     color: #FFC300;
     cursor: pointer;
     text-decoration: none;
 }
+
+.menu_logo{
+    width: 20px;
+    height: 20px;
+}
 .active > h5{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 500;
     font-family: Lora;
 }
@@ -59,7 +66,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 30px;
     color: #EEEDED;
     cursor: pointer;
     text-decoration: none;
@@ -78,25 +84,29 @@
     object-fit: cover;
 }
 .notactive > h5{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     font-family: Lora;
 }
 
-.theEnd{
-    width: 95%;
-    height: 5%;
+.log_out{
+    width: 100%;
+    height: 30px;
     /* background-color: blue; */
     display: flex;
     align-items: center;
-    margin-left: 20px;
-    margin-top: 120px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 20px;
+}
+.log_out_logo{
+    width: 20%;
+    height: 90%;
 }
 
-.profileLogout{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.profileLogout:hover{
+.log_out:hover,.Logout_link:hover{
     color: #FFC300;
 }

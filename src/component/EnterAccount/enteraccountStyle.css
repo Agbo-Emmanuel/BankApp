@@ -1,6 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .Login{
     width: 100%;
     height: 100vh;
+    padding: 20px 10px 20px 10px;
     background-color: #006D77;
     display: flex;
     justify-content: center;
@@ -8,20 +15,25 @@
 }
 
 .loginImg{
-    width: 623px;
-    height: 661px;
+    width: 40%;
+    height: 99%;
     background-color: #F5F5F5;
+    background-image: url('../Img/loginimg.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.loginImg >img{
+.loginImg > img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .theLogin{
-    width: 623px;
-    height: 661px;
+    width: 50%;
+    height: 99%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -29,8 +41,13 @@
     justify-content: center;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    gap: 10px;
 
-}   
+} 
+
+.theLogin > h1{
+    font-size: 30px;
+}
 .line{
     width: 100%;
     height: 1px;
@@ -38,10 +55,10 @@
 }
 
 .loginInputs{
-    width: 535px;
+    width: 70%;
     height: auto;
     /* background-color: yellow; */
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .theLoginInput{
@@ -52,8 +69,8 @@
     margin-bottom: 30px;
 }
 .theLoginInput > input{
-    width: 529px;
-    height: 55px;
+    width: 100%;
+    height: 50px;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding-left: 10px;
@@ -65,19 +82,19 @@
 }
 
 .theLoginInput > label{
-   font-size: 19px;
+   font-size: 17px;
    font-weight: 450;
    font-family: Arial;
 }
 
 .loginBtn{
-    width: 532px;
-    height: 82px;
+    width: 70%;
+    height: 60px;
     border-radius: 8px;
     background-color: #006D77;
     border: none;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
@@ -88,7 +105,7 @@
 }
 
 .theLogin > p{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -118,40 +135,40 @@
 }
 
 .signupimg{
-    width: 700px;
-    height: 900px;
+    width: 35%;
+    height: 95%;
     background-color: #F5F5F5;
+    background-image: url('../Img/signupimg.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.signupimg >img{
-    width: 100%;
-    height: 100%;
-}
-
 .theSignup{
-    width: 700px;
-    height: 900px;
+    width: 50%;
+    height: 95%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: space-around; */
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    gap: 20px;
 }  
 
 .signupline{
     width: 100%;
     height: 1px;
     background-color: lightgrey;
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
 }
 
 .profilePic{
     width: 20%;
-    height: 15%;
+    height: 10%;
     /* background-color: red; */
     border-radius: 100%;
     margin-bottom: 20px;
@@ -173,7 +190,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .addImage:hover{
     background-color: #02525a;
@@ -181,11 +198,11 @@
 
 
 .signupInputs{
-    width: 535px;
+    width: 80%;
     height: auto;
     /* background-color: yellow; */
-    margin-top: 10px;
-    margin-bottom: 20px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 20px; */
     display: flex;
     gap: 25px;
 }
@@ -194,17 +211,18 @@
     width: 100%;
     height: auto;
     display: flex;
+    /* background-color: red; */
     flex-direction: column;
     /* margin-bottom: 30px; */
 }
 
 .theSignupInputs > input{
-    width: 244px;
-    height: 52px;
+    width: 100%;
+    height: 50px;
     border: 1px solid lightgrey;
     border-radius: 5px;
     padding-left: 10px;
-    margin-top: 8px;
+    margin-top: 5px;
     outline: none;
 }
 
@@ -218,17 +236,26 @@
    font-family: Arial;
 }
 
+.signup_btn_part{
+    width: 80%;
+    height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .signupBtn{
-    width: 532px;
-    height: 82px;
+    width: 50%;
+    height: 100%;
     border-radius: 8px;
     background-color: #006D77;
     border: none;
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 20px;
     /* margin-bottom: 5px; */
 }
 .signupBtn:hover{

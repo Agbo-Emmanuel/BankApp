@@ -8,7 +8,6 @@ import Deposit from "./component/Pages/Deposit"
 import PayBills from "./component/Pages/PayBills"
 import Transfer from "./component/Pages/Transfer"
 import Withdraw from "./component/Pages/Withdraw"
-import Notification from "./component/Pages/Notification"
 import Account from "./component/Pages/Account"
 import History from "./component/Pages/History"
 
@@ -53,7 +52,6 @@ const App = () => {
                 <Route path='/paybills' element= { <PayBills/> }/>
                 <Route path='/transfer' element= { <Transfer/> }/>
                 <Route path='/withdraw' element= { <Withdraw/> }/>
-                <Route path='/notification' element= { <Notification/> }/>
                 <Route path='/account' element= { <Account/> }/>
                 <Route path='/history' element= { <History/> }/>
               </Route>

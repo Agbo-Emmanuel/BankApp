@@ -11,6 +11,17 @@ import historyimg from "../Img/historylogo.png"
 import notificationimg from "../Img/notificationlogo.png"
 import logoutimg from "../Img/logoutlogo.png"
 import { Link, NavLink } from 'react-router-dom'
+import { MdLogout } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { MdOutlineAccountCircle } from "react-icons/md";
+import { PiHandDeposit } from "react-icons/pi";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { BiMoneyWithdraw } from "react-icons/bi";
+import { MdPayments } from "react-icons/md";
+import { FaHistory } from "react-icons/fa";
+import { IoMdNotificationsOutline } from "react-icons/io";
+
+
 // import axios from 'axios'
 
 
@@ -59,60 +70,51 @@ const Menu = () => {
 
               <NavLink to= "/dashboard" className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={dashboardimg} alt=''/></div>
+                <MdDashboard className='menu_logo'/>
                 <h5>Dashboard</h5>
               </NavLink>
 
               <NavLink to= "/account"  className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={accountimg} alt=''/></div>
+                <MdOutlineAccountCircle className='menu_logo'/>
                 <h5>Account</h5>
               </NavLink>
 
               <NavLink to= "/deposit" className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={depositimg} alt=''/></div>
+                <PiHandDeposit  className='menu_logo'/>
                 <h5>Deposit</h5>
               </NavLink>
 
               <NavLink to= "/transfer"  className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={transferimg} alt=''/></div>
+                <FaMoneyBillTransfer  className='menu_logo'/>
                 <h5>Transfer</h5>
               </NavLink>
 
               <NavLink to= "/withdraw" className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={withdrawimg} alt=''/></div>
+                <BiMoneyWithdraw  className='menu_logo'/>
                 <h5>Withdraw</h5>
               </NavLink>
 
               <NavLink to= "/paybills" className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={paybillsimg} alt=''/></div>
+                <MdPayments className='menu_logo'/>
                 <h5>Pay Bills</h5>
               </NavLink>
 
               <NavLink to= "/history" className={({ isActive}) =>
                             isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={historyimg} alt=''/></div>
+                <FaHistory className='menu_logo'/>
                 <h5>History</h5>
-              </NavLink>
-
-              <NavLink to= "/notification" className={({ isActive}) =>
-                            isActive ? "active" : "notactive"}>
-                <div className='menuTitleImg'><img src={notificationimg} alt=''/></div>
-                <h5>Notification</h5>
               </NavLink>
 
             </div>
 
-            <div className='theEnd'>
-              <div className='notactive'>
-                <div className='menuTitleImg'><img src={logoutimg} alt=''/></div>
-                <h5><Link  to = "/" className='profileLogout' onClick={handleLogout}>Log out</Link></h5>
-              </div>
-
+            <div className='log_out'>
+              <MdLogout className='log_out_logo' />
+              <h5 onClick={handleLogout}>Log out</h5>
             </div>
         </div>
     
